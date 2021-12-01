@@ -1,0 +1,13 @@
+name: "Label Issue Pest"
+description: "Pester an author to add labels to their issue when they forget."
+inputs:
+  token:
+    description: "Github token"
+    required: true
+  message:
+    description: "Message to send to an author when they forget to add labels to an issue."
+    required: false
+    default: "Please add labels to your issue."
+runs:
+  using: "node12"
+  main: "dist/index.js"
